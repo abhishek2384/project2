@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+hr{
+    background-color: #111;
+    border-style: solid;
+}
+
+body{
+    background-color: #111;
+}
+/* landing page */
+.home{
+    height: 97%;
+}
+
+.navbar{
+    height: 10%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin:20px 110px 150px;
+}
+
+.navlft{
+    float: left;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+}
+
+.navlist{
+ display: flex;
+ float: right;
+ 
+}
+
+
+.navlist li,a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-left: 10%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.headcontent p{
+    color: white;
+    margin:21.2% 20%;
+    text-align: center;
+}
+
+
+
+
+/* service */
+.separater{
+     background-color: #fff;
+    transform: skewY(-2deg);
+    text-align: left;
+}
+
+.con{
+    transform: skewY(+2deg);
+    width: 60%;
+    margin: 10vh auto;
+}
+
+.con p{
+    margin-bottom: 10vh;
+}
+
+.con hr{
+   margin-bottom: 20px; 
+}
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 13vw;
+}
+
+.showcard{
+    background-color: white;
+    margin-top: 5vh;
+    width: 40%;
+    border-radius: 35px;
+    text-align: center;
+    margin: 8px;
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+.c{
+    background-color: #111;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin: 3vh auto;
+}
+
+.card p{
+    margin: 5% 15px 9%;
+}
+
+.card input[type=button]{
+    width: 40%;
+    border-radius: 50px;
+   margin: auto;
+   
+}
+
+
+
+
+/* about section */
+.about{
+    display: flex;
+    width: 71vw;
+    margin:  90px auto ;
+    justify-content: space-between;
+}
+
+.abouttxt{
+    width: 23vw;
+    color: white;
+}
+
+.abouttxt h3{
+    font-weight: 500;
+}
+
+.abouttxt hr{
+    margin-bottom: 20px;
+}
+
+.aboutform{
+    width: 23vw;
+}
+
+.aboutform input[type=text],input[type=button]{
+    display: block;
+    width: 23vw;
+    padding: 10px;
+    text-align: center;
+}
+
+.aboutform input[type=button]{
+    background-color: rgb(6, 255, 6);
+}
+
+.foot{
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+}
+
+.footcase{
+margin-bottom: 20px;
+}
+
+.foot hr{
+    width: 160px;
+    margin: 5px auto;
+}
+
+
+
+
+/* responsive */
+ @media  (max-width: 650px) {
+     
+     .card{
+         display: flex;
+         flex-direction: column;
+     }
+
+     .showcard{
+         width: 90%;
+        margin: 20px auto;
+     }
+
+     .about{
+         display: flex;
+         flex-direction: column;
+     }
+
+     .abouttxt{
+         width:100%;
+         text-align: center;
+     }
+
+     .aboutform{
+         width: 100%;
+         margin-top: 25PX;
+     }
+     .aboutform input[type=text],input[type=button]{
+         width: 100%;
+     }
+
+     .foot{
+         display: flex;
+         flex-direction: column;
+     }
+
+     .footcase{
+        margin: 20px;
+     }
+
+     .navbar{
+         width: 75%;
+         display: flex;
+         justify-content: space-between;
+         margin:5%;
+     }
+     .navlft{
+         float: left;
+     }
+     .navlist{
+        margin-top: 4%;
+     }
+ }
+
+ 
